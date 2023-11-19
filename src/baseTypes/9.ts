@@ -3,8 +3,18 @@
 */
 
 type Pages = {
-  [key:string]:any
+  title: string,
+  likes: number,
+  accounts: string[],
+  status: string,
+  details?:DetailsObject
 }
+
+type DetailsObject = {
+  createAt: Date,
+  updateAt:Date
+}
+
 
 const page1:Pages = {
   title: 'The awesome page',
